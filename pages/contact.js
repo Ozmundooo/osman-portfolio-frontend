@@ -4,7 +4,9 @@ import ContactForm from "../components/ContactForm";
 export default function Home() {
   return (
     <>
-      <ContactForm />
+      <div className="h-screen">
+        <ContactForm />
+      </div>
     </>
   );
 }
