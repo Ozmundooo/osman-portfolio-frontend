@@ -11,6 +11,10 @@ import ContactForm from "../components/ContactForm";
 export default function Home({ works, testimonials }) {
   return (
     <>
+      <Head>
+        <title>Osman Ali: Web Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <WorksList works={works} />
       <TestimonialsList testimonials={testimonials} />
       <ContactForm />

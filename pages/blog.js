@@ -8,6 +8,10 @@ import ContactForm from "../components/ContactForm";
 export default function Blog({ blogs }) {
   return (
     <>
+      <Head>
+        <title>Osman Ali: Web Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <BlogsList blogs={blogs} />
       <ContactForm />
     </>
