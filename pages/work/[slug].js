@@ -15,7 +15,6 @@ export default function Work({
   date,
   images,
 }) {
-  console.log(date);
   return (
     <>
       <Head>

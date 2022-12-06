@@ -6,7 +6,6 @@ import { blogPageQuery } from "../../lib/sanity/blogPageQuery";
 import Image from "next/image";
 import Head from "next/head";
 export default function Work({ title, mainImage, description, date, authors }) {
-  console.log(date);
   return (
     <>
       <Head>
