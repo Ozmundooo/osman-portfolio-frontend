@@ -3,6 +3,7 @@ import { sanityClient, urlFor } from "../../lib/sanity/client";
 import { workPageQuery } from "../../lib/sanity/workPageQuery";
 import PortableText from "react-portable-text";
 import ContactForm from "../../components/ContactForm";
+import Head from "next/head";
 export default function Work({
   title,
   mainImage,
