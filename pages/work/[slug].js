@@ -15,6 +15,7 @@ export default function Work({
   date,
   images,
 }) {
+  const heroBG = urlFor(mainImage);
   return (
     <>
       <Head>
@@ -22,9 +23,16 @@ export default function Work({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <section>
-        <div className=" w-screen">
-          <img className=" w-screen" src={urlFor(mainImage)} />
+        <div>
+          <div class="relative w-screen ">
+            <img src={heroBG} className="opacity-50 " />
+            <img
+              class="absolute w-1/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              src="https://cdn.sanity.io/images/f5pxjqkf/production/1dd5df5b8735e1654a62c9cb5bb00d1f405571f3-398x79.png"
+            />
+          </div>
         </div>
+
         <div className="font-['Poppins'] px-5 lg:mx-10 lg:mt-10">
           <div className="lg:flex lg:flex-row-reverse ">
             <div className="lg:w-1/2">
@@ -35,8 +43,6 @@ export default function Work({
                 // Pass in block content straight from Sanity.io
                 content={description}
                 className="text-sm mb-4  lg:text-xl font-light lg:w-11/12"
-                // Optionally override marks, decorators, blocks, etc. in a flat
-                // structure without doing any gymnastics
               />
             </div>
 
@@ -71,21 +77,15 @@ export default function Work({
             <div className="lg:w-1/2">
               <h2 className="font-anon text-2xl my-2 font-bold">Problem</h2>
               <PortableText
-                // Pass in block content straight from Sanity.io
                 content={problem}
                 className="text-sm mb-4  lg:text-xl font-light lg:w-11/12"
-                // Optionally override marks, decorators, blocks, etc. in a flat
-                // structure without doing any gymnastics
               />
             </div>
             <div className="lg:w-1/2 ">
               <h2 className="font-anon text-2xl my-2 font-bold">Solution</h2>
               <PortableText
-                // Pass in block content straight from Sanity.io
                 content={solution}
                 className="text-sm mb-4  lg:text-xl font-light lg:w-11/12"
-                // Optionally override marks, decorators, blocks, etc. in a flat
-                // structure without doing any gymnastics
               />
             </div>
           </div>
